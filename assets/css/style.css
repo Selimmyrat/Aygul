@@ -112,13 +112,13 @@ img {
     background-color: transparent;
     line-height: 1.5;
     cursor: pointer;
-    border-radius: 0%;
+    border-radius: 5px;
     transition: all 0.3s ease;
     display: inline-block;
 }
 
 .btn-1:after {
-    border-radius: 0%;
+    border-radius: 5px;
 }
 
 .effect-wrap .effect{
@@ -162,9 +162,9 @@ img {
     animation: leftBounce 3s ease-in-out infinite;
 }
 
-/* .effect-4 {
+.effect-4 {
     border-top: 30px solid transparent;
-    border-left: 30px solid;
+    border-left: 30px solid #06d79c;
     left: 30%;
     top: 20%;
     animation: spin 15s linear infinite;
@@ -172,19 +172,19 @@ img {
 
 .effect-4:before {
     content: '';
-    border-top: 30x solid transparent;
+    border-top: 30px solid transparent;
     border-left: 30px solid #06d79c;
     position: absolute;
     opacity: 0.5;
     left: -35px;
-    top: -25;
-} */
+    top: -25px;
+}
 
 .effect-5 {
     height: 50px;
     width: 50px;
-    left: 20%;
-    top: 25%;
+    right: 10%;
+    top: 30%;
     display: flex;
     justify-content: space-between;
     border-radius: 50%;
@@ -222,6 +222,31 @@ img {
     50% {
         transform: translateX(25px);
     }
+}
+
+.section-title {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.section-title h2:before {
+    content: attr(data-heading);
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--skin-color);
 }
 
 /* header */
@@ -431,9 +456,47 @@ img {
     border: 10px solid transparent
 }
 
+/* about section */
+.about-section {
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
 
+.about-section .about-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0 15px;
+}
 
+.about-section .about-img .img-box {
+    padding: 15px;
+    border-radius: 5px;
+}
 
+.about-section .about-img .img-box img {
+    width: 100%;
+    border: 10px solid transparent;
+    border-radius: 5px;
+}
 
+.about-section .about-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 15px;
+}
 
+.about-section .about-info p{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    color: var(--text-black-600);
+}
+
+.about-section .about-info span {
+    font-weight: 600;
+}
+
+.about-section .about-info .btn-1 {
+    margin: 30px 20px 0 0;
+}
 
